@@ -30,7 +30,7 @@ void Snake::UpdateHead(){
     break;  
  }
 
-//  head_x = fmod(head_x+grid_width,grid_width);
-//  head_y = fmod(head_y+grid_height,grid_height);
+ head_x = fmod(head_x+grid_width,grid_width);
+ head_y = fmod(head_y+grid_height,grid_height);
 
 }

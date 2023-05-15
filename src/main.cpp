@@ -7,7 +7,7 @@
 int main(){
 
 
-Renderer render{1000,1000,32,32};
+Renderer render{640,640,32,32};
 Control control;
 Game game{32,32};
 game.run(control,render);

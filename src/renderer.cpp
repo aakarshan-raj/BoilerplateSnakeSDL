@@ -1,5 +1,5 @@
 #include "renderer.h"
-
+#include <iostream>
 
 Renderer::Renderer(std::size_t a, std::size_t b,
                     std::size_t c, std::size_t d):
@@ -15,10 +15,13 @@ renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
 void Renderer::Render(Snake &snake){
 
  SDL_Rect block;
- block.x = snake.head_x;
- block.y = snake.head_y;
- block.w = 20;
- block.h = 20;
+ block.w = screen_width/grid_width;
+ block.h = screen_height/grid_height;
+ block.x = block.w*snake.head_x;
+ block.y = block.h*snake.head_y;
+
+ 
+ std::cout<<"("<<snake.head_x<<","<<snake.head_y<<")"<<std::endl;
  SDL_SetRenderDrawColor(renderer,0x00,0x00,0x00,0x00);
  SDL_RenderClear(renderer);
   SDL_SetRenderDrawColor(renderer,0xde,0x2f,0xdd,0xdd);
