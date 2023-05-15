@@ -2,11 +2,11 @@
 
 ## Game Loop
 
-1. Input
-2. Update
-3. Render
+1. Input (Control class)
+2. Update (Game Class)
+3. Render (Renderer Class)
 
-## we have 4 important classes
+## 4 classes
 1. Snake
 2. Renderer
 3. Control
