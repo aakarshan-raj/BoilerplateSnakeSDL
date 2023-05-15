@@ -7,9 +7,9 @@ void Game::run(Control &control,Renderer &render){
 
 
      while(runnning){
-        control.HandleInput(runnning,snake);
-        Update();
-        render.Render(snake);
+         control.HandleInput(runnning,snake);
+         Update();
+         render.Render(snake);
      }
 }
 
